@@ -1,0 +1,2487 @@
+
+
+@font-face {
+    font-family: 'Bozon';
+    src: url(fonts/Bozon-DemiBoldItalic.otf);
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Main Nav Header --- */
+
+/* >> New Drop-Down Nav Tryout << */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+  padding: 0 20px;
+  background: #fcfffa;
+  border-style: solid;
+  border-bottom: none;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: white;
+  font-family: 'Bozon-DemiBoldItalic';
+
+ 
+  /*height: 35px;*/
+  
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-left .logo {
+  height: 50px; /* adjust to your preferred logo size */
+}
+
+.nav-right {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* controls spacing between menu items */
+}
+
+.navbar ul li {
+  position: relative; /* needed for dropdown positioning */
+
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid transparent; /* keeps layout stable */
+}
+
+.navbar ul li:hover > a {
+  border: 1px solid; /* or your brand color */
+  background: white; /* optional, keeps background consistent */
+}
+
+/*.navbar ul li a:hover {
+    background: #dedddd;
+    border-style: solid;
+}*/ 
+
+.navbar ul li .dropdown-menu {
+  display: none;
+  font-family: 'Bozon-Regular';
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* directly below parent */
+  left: 0;
+  background: #444;
+  min-width: 160px;
+   border-style: solid;
+  z-index: 1000; /* ensures it appears above other elements */
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+  padding: 12px;
+  white-space: nowrap; /* prevent line breaks */
+}
+
+/* Keep dropdown visible when hovering parent OR submenu */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+/* Optional: smooth hover transition */
+.dropdown-menu {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+}
+
+
+
+/*.navbar {
+    border-style: solid;
+    /*background-color:aqua;
+    height: 35px;
+    /*display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    position: relative;
+   /* width: 100vh;
+} */
+
+#logo {
+    height: 2rem;
+    width: 2rem;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+}
+
+.text-headers {
+    padding-right: 10px;
+    display: flex;
+    gap: 30px;
+    /*display: flex;
+    justify-content: flex-end;*/
+}
+/*ul li {
+    display: inline;
+}*/
+
+.text-headers a {
+    font-family: 'Bozon-DemiBoldItalic';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fcfffa;
+    min-width: 160px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    padding-top: 13px;
+}
+
+/* Small screen rules */
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .text-headers {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 44px;
+        right: 8px;
+        padding: 10px;
+        background-color: white;
+        border-style: solid;
+        z-index: 1;
+    }
+
+    .text-headers.active {
+        display: flex;
+    }
+}
+
+
+
+/* --- Homepage --- */
+
+
+
+
+
+.herosquare {
+    /*background-color: aqua;*/
+    border-style: solid;
+    display: flex;
+}
+
+/*.#squares {
+    display: flexbox;
+    justify-content: center;
+}
+
+.cat-box {
+    display: flex;
+    justify-content: center;
+}*/
+
+
+
+#squareone {
+    width: 33.3%;
+    height: 480px;
+    object-fit: cover;
+    background-image: url('images/Low_F3_WD1.png');
+    background-size: cover;
+    padding-right: 2%;
+
+}
+
+#squaretwo {
+    width: 33.3%;
+    height: 480px;
+    object-fit: cover;
+    background-image: url('images/GD.png');
+    background-size: cover;
+    padding-right: 2%;
+
+}
+
+#squarethree {
+    width: 33.3%;
+    height: 480px;
+    object-fit: cover;
+    background-image: url('images/we_uiux@4x.png');
+    background-size: cover;
+    padding-right: 2%;
+
+}
+
+#square-text {
+    position: relative;
+    top: 80%;
+    text-align: center;
+    background-color: #ffe039;
+    width: 178px;
+    left: 30%;
+    border: 5px solid #fcfffa;
+    z-index: 1;
+    font-family: 'Biennale-SemiBold';
+
+
+}
+
+
+/*.squares {
+    width: 424px;
+    height: 507px;
+    object-fit: cover;
+    background-image: url('images/Low_F3_WD1.png');
+   
+
+    background-size: contain;
+}*/
+
+/*.hero-images{
+    width: 725px;
+    height: 490px;
+    object-fit: cover;
+}
+
+/*.hero-images {
+  
+}*/ 
+
+#wel-top {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20%;
+    flex-direction: column;
+    /*row-gap: 2rem;*/
+    
+}
+
+#wel-top h1 {
+    font-family: 'Biennale-Black';
+    font-size: 6rem;
+    line-height: 90%;
+}
+
+#h1two {
+    align-items: start;
+}
+
+.welcome_message {
+    border-style: solid;
+    color: black;
+}
+
+#wel-bottom {
+    background-color: #ffe039;
+    height: 400px;
+    padding-right: 10%;
+}
+
+#wel-bottom h2 {
+    font-family: 'NeogroteskEss-Bold';
+    color: #fcfffa;
+    font-size: 3rem;
+    margin-left: 20%;
+    padding-top: 2%;
+}
+
+#wel-bottom p {
+    font-family: 'Biennale-UltraLightIt';
+    margin-left: 20%;
+    font-size: 1.5rem;
+}
+
+/* -- mobile break  -- */ 
+@media (max-width: 600px) {
+    .herosquare {
+        flex-direction: column;
+    }
+
+    #squareone {
+        width: 100%;
+        height: 150px;
+        background-position: 100% 70%;
+    }
+
+    #squaretwo {
+        width: 100%;
+        height: 150px;
+    }
+
+    #squarethree {
+        width: 100%;
+        height: 150px;
+    }
+
+    #square-text {
+        top: 50%;
+        width: 120px;
+        font-size: .85em;
+        left: 35%;
+    }
+
+    #wel-top {
+        margin-left: 12%;
+    }
+
+    #wel-top h1 {
+        font-size: 4rem;
+    }
+
+    #wel-bottom {
+        padding-right: 10%;
+    }
+
+    #wel-bottom h2 {
+        font-size: 1.75rem;
+        margin-left: 12%;
+    }
+
+    #wel-bottom p {
+        margin-left: 12%;
+        font-size: 1rem;
+    }
+}
+
+
+/* -- tablet break  -- */ 
+@media (min-width: 601px) and (max-width: 900px) {
+
+    #wel-top h1 {
+        font-size: 4rem;
+    }
+
+    #wel-bottom {
+        padding-right: 10%;
+    }
+
+    #wel-bottom h2 {
+        font-size: 2rem;
+        margin-left: 22%;
+       
+    }
+
+    #wel-bottom p {
+        margin-left: 22%;
+        font-size: 1.15rem;
+    }
+
+    #square-text {
+        left: 20%;
+        right: 20%;
+        font-size: .85rem;
+        width: 137px;
+    }
+}
+
+/* -- Reg Desktop break  -- */ 
+@media (min-width: 901px) and (max-width: 1024px) {
+
+    #wel-bottom {
+        padding-right: 10%;
+        height: 445px;
+
+    }
+
+    #square-text {
+        left: 23%;
+    }
+
+    #wel-bottom h2 {
+        margin-left: 22%;
+       
+    }
+
+    #wel-bottom p {
+        margin-left: 22%;
+    }
+
+    
+}
+
+
+/* -- Lg Desktop break  -- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    #square-text {
+    left: 37%;
+    }
+
+    #wel-bottom {
+        padding-right: 10%;
+    }
+}
+
+    
+
+
+
+
+/* --- WD,GD CSS --- */
+
+
+
+
+#top {
+    height: 480px;
+    /*width: 100%;*/
+    /* width: 1657px; */
+    border-style: solid;
+    display: flex;
+    flex-direction: column;  /* stack .text-box + paragraph */
+    align-items: center;     /* center children horizontally */
+    justify-content: center;
+    gap: 20px;               /* space between them */
+    padding: 20px;
+}
+
+.text-box {
+    height: 78px;
+    width: 390px;
+    background-color: #ffe039; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+     cursor: pointer;
+}
+
+.paragraph {
+font-size: .9rem;
+line-height: 1.6;
+max-width: 500px;    /* match .text-box width */
+/* text-align: justify;  optional: center text under box */
+margin: 0;  
+margin-left: 2%;
+}
+
+.paragraph span {
+    opacity: 0;
+    display: inline-block;
+}
+
+ /* Only animate when box is hovered */
+#top:hover .text-box + .paragraph span {
+    animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box-left {
+    height: 480px;
+    border-style: solid;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box-right {
+    height: 480px;
+    border-style: solid;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box {
+    height: 54px;
+    width: 288px;
+    background-color: #ffe039;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#top h1 {
+    font-family: 'Biennale-Black';
+    font-size: 3rem;
+    color: #a2a2a3;
+}
+
+#bottom p {
+    font-family: 'Biennale-SemiBold';
+    font-size: 2rem;
+    color: #a2a2a3;
+}
+
+#top p {
+    font-family: 'Biennale-Light';
+    text-align: justify;
+}
+
+/* -- mobile break -- */
+@media (max-width:600px) {
+
+    #top {
+        width: 100%;
+    }
+
+    #top h1 {
+        font-size: 2.4rem;
+    }
+    .text-box {
+        width: 248px;
+        height: 60px;
+    }
+
+    .paragraph {
+        display: none;
+    }
+
+    #bottom {
+        flex-direction: column;
+    }
+
+    .text-box-left {
+        height: 250px;
+        width: 100%;
+    }
+
+    .text-box-right {
+        height: 250px;
+        width: 100%;
+    }
+
+    .logo-box {
+        height: 35px;
+        width: 118px;
+    }
+
+    #bottom p {
+        font-size: 1.48rem;
+    }
+
+
+
+
+
+
+}
+
+
+/* ---   GD1: Graphic Design Project   --- */
+
+#intro {
+    /*border-style: solid;
+    display: inline-block;
+    padding: 6.5%;*/ 
+   /* --- great proportion */
+    background-color: #ffe039;
+    padding: 6.5% 9% 6.5% 18%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+#intro h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+    left: 3%;
+
+}
+
+#intro h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+#intro p {
+    font-family: 'ClarikaProGeo-Md';
+    width: 85%;
+    text-align: justify;
+    position: relative;
+    bottom: 35px;
+}
+
+@media (min-width:959px) {
+    #intro {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+/* Toggle/Drop v3 */
+
+#nav-box {
+  position: fixed;
+  top: 50px;  /* adjust as needed */
+  right: 20px; /* adjust as needed */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: none; /* hidden by default */
+  z-index: 1000;
+}
+
+#nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+#nav-list li {
+  margin: 5px 0;
+  font-family: 'Bozon-Regular';
+}
+
+#toggle-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* .dropdown {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      z-index: 100;
+      display: none; /* hidden at first 
+    } 
+
+    .dropdown-btn {
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .icon {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .dropdown-content {
+      display: none;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 100;
+    }
+
+    .dropdown-content.show {
+      display: block;
+    }
+
+    /* Style UL inside dropdown 
+    .dropdown-content ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      z-index: 100;
+    }
+
+    .dropdown-content li {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    .dropdown-content li:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-content li:hover {
+      background: #eee;
+    }
+    */
+
+
+/*#project-img {
+    border-style: solid;
+}*/
+
+#design-brief {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    padding-top: 5%;
+}
+
+#design-brief img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+@media (max-width:1690px) {
+    #design-brief {
+        padding: 5% 10% 5% 10%;
+    }
+}
+
+#logo-GD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#logo-GD img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+#BrandStand-GD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    
+}
+
+#BrandStand-GD img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+#StationaryDes-GD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#StationaryDes-GD img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+#AdDesign-GD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#AdDesign-GD img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+#Website-GD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#Website-GD img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+#Merch-GD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#Merch-GD img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+#scrollBox {
+    position: fixed;
+    bottom: 20px;
+    width: 222px;
+    height: 300px;
+    border-style: solid;
+    font-family: 'Bozon-Regular';
+    right: 10%;
+    line-height: 200%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: none;
+    background-color: #fff;
+    
+}
+
+
+
+
+/* ---   GD2: Works   --- */
+
+
+
+#intro-GD2 {
+    /*border-style: solid;
+    display: inline-block; removing 'in-line block allowed intro 
+    div to go full screen of Viewport */
+    padding: 6.5%; 
+   /* --- great proportion */
+    background-color: #ffe039;
+    padding: 6.5% 9% 6.5% 18%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+#intro-GD2 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+#intro-GD2 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+}
+
+#intro-GD2 p {
+    font-family: 'ClarikaProGeo-Md';
+    width: 85%;
+    text-align: justify;
+    position: relative;
+    bottom: 35px;
+}
+
+@media (min-width:959px) {
+    #intro-GD2 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+
+
+.project-top {
+    height: 100px;
+    background-color: #fcfffa;
+    /*border-style: solid;
+    border-bottom: #fcfffa;*/
+    
+}
+
+.project-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffe039;
+    padding-top: 43px;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 26px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    /*border-style: solid;
+    border-top: #fcfffa;*/
+}
+
+.project-bottom a {
+    display: flex;
+    justify-content: center;
+}
+
+
+ .wrapper hr  {
+    position: relative;
+    top: -8px;
+    border-style: solid;
+}
+
+.wrapper {
+    border-style: solid;
+}
+
+.project-top h1 {
+    position: relative;
+    margin-left: 15%;
+    top: 20px;
+    font-family: 'ClarikaProGeo-Dm';
+}
+
+.project-bottom p {
+    font-family: 'ClarikaProGeo-Rg';
+    
+}
+
+#Helix img {
+    position: relative;
+    max-width: 100%;
+}
+
+
+/* -- mobile break  -- */ 
+
+@media (max-width: 600px) {
+    .project-bottom p {
+        display: flex;
+        justify-content: center;
+        margin-left: -42%;
+        width: 200%;
+        /*position: relative;
+        width: 200%;
+        left: 29px;*/
+    }
+}
+
+/* ---   GD4: Helix   --- */
+
+#intro-GD3 {
+    border-style: solid;
+    display: inline-block;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+}
+
+@media (min-width:959px) {
+
+    #intro-GD3 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+
+p#work_copy {
+    font-family: 'ClarikaProGeo-Md';
+    position: relative;
+    top: -33px;
+    width: 80%;
+    text-align: justify;
+}
+
+
+
+#intro-GD3 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+@media (min-width:959px) {
+
+    #intro-GD3 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#intro-GD3 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+#intro-GD3 h3 {
+    position: relative;
+    top: 26px;
+    font-family: 'ClarikaProGeo-Bd';
+    margin-bottom: 32px;
+}
+
+#compents {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#compents h4 {
+    font-family: 'ClarikaProGeo-Md';
+    font-weight: normal;
+    display: flex;
+}
+
+#Helix-works {
+    display: flex;
+    justify-content: center;
+    /*width: 100%;*/
+    height: 80%;
+    background-color: #ffe039;
+    border-style: solid;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#Helix-works img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+@media (min-width:959px) {
+
+    #intro-GD3 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+
+
+
+
+/* ---   GD3: Flux   --- */
+
+
+
+#intro-GD4 {
+    border-style: solid;
+    display: inline-block;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+}
+
+@media (min-width:959px) {
+
+    #intro-GD3 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#intro-GD4 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+#intro-GD4 h3 {
+    position: relative;
+    top: 26px;
+    font-family: 'ClarikaProGeo-Bd';
+    margin-bottom: 32px;
+}
+
+#intro-GD4 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+#Flux-works {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    border-style: solid;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#Flux-works img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+}
+
+
+/* ---   UIUX1: Surface Project   --- */
+
+#intro-UI1 {
+    background-color: #ffe039;
+    padding: 6.5% 9% 6.5% 18%;
+}
+
+#intro-UI1 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+#intro-UI1 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+#intro-UI1 p {
+    font-family: 'ClarikaProGeo-Md';
+    width: 85%;
+    text-align: justify;
+    position: relative;
+    bottom: 35px;
+    margin-bottom: 30%;
+}
+
+@media (min-width:959px) {
+    #intro-UI1 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#Surface img {
+    position: relative;
+
+    max-width: 100%;
+    margin-bottom: 8%;
+}
+
+#surfacevidbox {
+    width: 240px;
+    height: 515px;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+#surface video {
+    margin-top: 10%;
+}
+
+
+/* ---   UI3: UI/UX Dodecagon   --- */
+
+
+#intro-UI3 {
+    position: relative;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+}
+
+
+
+@media (min-width:959px) {
+
+    #intro-UI3 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#intro-UI3 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+@media (max-width:768px) {
+
+    #intro-UI3 h1 {
+        font-size: 4rem;
+
+    }
+}
+
+@media (max-width:519px) {
+
+    #intro-UI3 h1 {
+        font-size: 3.5rem;
+
+    }
+}
+
+#intro-UI3 h3 {
+    position: relative;
+    top: 26px;
+    font-family: 'ClarikaProGeo-Bd';
+    margin-bottom: 32px;
+}
+
+#intro-UI3 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+
+
+#copy-UI3 {
+    font-family: 'ClarikaProGeo-Md';
+    position: relative;
+    top: -33px;
+    width: 80%;
+    text-align: justify;
+}
+
+
+
+#Dodecagon-works {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#Dodecagon-works  img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+    width: inherit;
+}
+
+#wrapper-UI3 {
+    border-style: solid;
+}
+
+
+
+
+
+
+/* ---   UI4: UI/UX CMxB   --- */
+
+#intro-UI4 {
+    position: relative;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+}
+
+#title-header-UI4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+#intro-UI4 {
+    position: relative;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+}
+
+
+
+@media (min-width:959px) {
+
+    #intro-UI4 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#x {
+    position: relative;
+}
+
+#intro-UI4 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+@media (max-width:768px) {
+
+    #intro-UI4 h1 {
+        font-size: 4rem;
+
+    }
+}
+
+@media (max-width:519px) {
+
+    #intro-UI4 h1 {
+        font-size: 3.5rem;
+
+    }
+}
+
+#intro-UI4 h3 {
+    position: relative;
+    top: 26px;
+    font-family: 'ClarikaProGeo-Bd';
+    margin-bottom: 32px;
+}
+
+#intro-UI4 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+
+
+#copy-UI4 {
+    font-family: 'ClarikaProGeo-Md';
+    position: relative;
+    top: -33px;
+    width: 80%;
+    text-align: justify;
+}
+
+#x {
+    position: relative;
+    margin: auto;
+}
+
+#byredo {
+    position: relative;
+    left: 20%;
+}
+
+
+
+/* ---   WD1   --- */
+
+
+.wrapper {
+    position: relative;
+}
+
+#intro-wd1 { /* Ok, we have the color blocking down code wise, but to keep design raton with widing and shorting of sceen width size, we'll have to impliment 'max-width' 'min-width'*/
+    display: inline-block;
+    padding: 6.5%; 
+   /* --- great proportion */
+    /*background-color: #ffe039;*/
+    padding: 6.5% 9% 6.5% 18%;
+    background-size: 150px 250px;
+    height: 200px;
+    /*height: 200px;*/
+}
+
+#top-yellow {
+    background-color: #ffe039;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+#wrapper, #top-yello {
+    object-fit: fill;
+}
+
+#intro-wd1 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+    left: 3%;
+    z-index: 1;
+
+}
+
+#intro-wd1 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+#intro-wd1 p {
+    font-family: 'ClarikaProGeo-Md';
+    width: 85%;
+    text-align: justify;
+    position: relative;
+    bottom: 35px;
+}
+
+
+
+@media (min-width:959px) {
+    #intro-wd1 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#snd-box {
+    position: relative;
+    background-color: #fcfffa;
+    height: 300px;
+    
+    width: 100%;
+}
+
+
+
+@media (max-width:708px) {
+    #snd-box {
+        height: 100px;
+
+    }
+}
+
+@media (max-width:507px) {
+    #snd-box {
+        height: 60px;
+
+    }
+}
+
+@media (min-width: 800px) {
+    #snd-box {
+        height: 300px;
+
+    }
+}
+
+#project-wd {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffe039;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#project-wd img {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+    width: inherit;
+}
+
+#wd1-bottom {
+    background-color: #ffe039;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cat-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.wd1-whtbox {
+    background-color: #fcfffa;
+    height: 200px;
+    margin-top: 50px;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+.wd1-whtbox2 {
+    background-color: #fcfffa;
+    height: 200px;
+    margin-top: 50px;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+
+.wd1-whtbox h1{
+    font-family: 'ClarikaProGeo-Dm';
+    text-align: center;
+    /*text-align: center;*/
+    
+    font-size: 4rem;
+}
+
+.wd1-whtbox2 h1{
+    font-family: 'ClarikaProGeo-Dm';
+    /*text-align: center;*/
+    text-align: center;
+    font-size: 4rem;
+}
+
+.wd1-whtbox p {
+    font-family: 'ClarikaProGeo-Lt';
+    text-align: center;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 20px 45px 3px;
+}
+
+.wd1-whtbox2 p {
+    font-family: 'ClarikaProGeo-Lt';
+    text-align: center;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 20px 45px 3px;
+}
+
+.p2  {
+    background-color: #fcfffa;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.p2 p {
+    font-family: 'ClarikaProGeo-Lt';
+    text-align: center;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 20px 45px 3px;
+}
+/* #sitemap_img {
+   display: flex;
+    justify-content: center;
+
+}*/
+
+#sitemap_img img {
+    width: 80%;
+    object-fit: cover;
+    display: block;
+    margin-top: -112px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 163px;
+    /*top: -10Px;*/
+}
+
+#sketch_img {
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    /*display: inline-block;
+    margin: -112px auto 163px;*/
+}
+
+#sketch_img img {
+    width: 40%;
+    margin-bottom: 163px;
+}
+
+#lowfed_img {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lowfed_img img {
+    width: 40%;
+    height: 100%;
+    margin-bottom: 163px;
+}
+
+#inlinebox-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#inlinebox-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 163px;
+}
+
+#hifed_img img {
+    height: 80%;
+    width: 37%;
+}
+
+/* -- mobile break  -- */ 
+@media (max-width: 600px) {
+
+    #intro-wd1 h1 {
+        font-size: 4rem;
+        margin-bottom: 15%;
+    }
+
+    #intro-wd1 p {
+        font-size: .8rem;
+    }
+
+    .wd1-whtbox h1 {
+        font-size: 2rem;
+    }
+
+     .wd1-whtbox2 h1 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 10px;
+    }
+
+    .wd1-whtbox p {
+        font-size: .8rem;
+    }
+
+    .p2 p {
+        font-size: .7rem;
+        width: 70%;
+        margin-right: 10%;
+    }
+}
+
+/* -- tablet break  -- */ 
+@media (min-width: 601px) and (max-width: 900px) {
+   
+    #intro-wd1 h1 {
+        font-size: 4rem;
+        margin-bottom: 15%;
+    }
+
+    #intro-wd1 p {
+        font-size: 1rem;
+    }
+
+    .wd1-whtbox h1 {
+        font-size: 2rem;
+    }
+
+     .wd1-whtbox2 h1 {
+        position: relative;
+        top: 10px;
+        font-size: 2rem;
+    }
+
+    .wd1-whtbox p {
+        font-size: 1rem;
+    }
+
+    .p2 p {
+        font-size: .9rem;
+        width: 80%;
+    
+    }
+
+
+}
+
+
+/* -- Reg Desktop break  -- */ 
+@media (min-width: 901px) and (max-width: 1124px) {
+    .wd1-whtbox2 h1 {
+        position: relative;
+        bottom: 28px; 
+    }
+}
+
+/*#hifed_img {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    row-gap: 20px;
+    height: 10%;
+    margin-bottom: 163px;
+    width: auto;
+   justify-items: start;
+    align-items: start;
+}
+
+
+   display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    height: 80%;
+    row-gap: 20px;
+    height: 10%;
+    margin-bottom: 163px;
+    width: auto;
+
+    display: inline-block;
+    margin: 0 auto;
+
+
+
+#hifed_img img {
+    height: 100%;
+    
+}*/
+
+/* #wd1-bottom > img {
+    width: 40%;
+    object-fit: cover;
+} */
+
+
+
+
+
+/* ---   WD2: Works  --- */
+
+#intro-WD2 {
+    /*border-style: solid;
+    display: inline-block; removing 'in-line block allowed intro 
+    div to go full screen of Viewport */
+    padding: 6.5%; 
+   /* --- great proportion */
+    background-color: #ffe039;
+    padding: 6.5% 9% 6.5% 18%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    
+}
+
+#intro-WD2 h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-Dm';
+    position: relative;
+    top: 65px;
+    margin-top: -3%;
+}
+
+#intro-WD2 h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    margin-left: 30px;
+}
+
+#intro-WD2 p {
+    font-family: 'ClarikaProGeo-Md';
+    width: 85%;
+    text-align: justify;
+    position: relative;
+    bottom: 43px;
+}
+
+@media (min-width:959px) {
+    #intro-WD2 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+
+
+.project-top-WD {
+    height: 100px;
+    background-color: #fcfffa;
+    /*border-style: solid;
+    border-bottom: #fcfffa;*/
+    
+}
+
+.project-bottom-WD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe039;
+    padding-top: 43px;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 26px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    /*border-style: solid;
+    border-top: #fcfffa;*/
+}
+
+ /*.project-bottom-WD .bimg {
+   display: flex;
+    justify-content: center;
+    display: block;
+}*/
+
+.bpara {
+    font-family: 'ClarikaProGeo-Rg';
+    text-align: center;
+
+}
+
+.bimg.bpara {
+    display: flex;
+}
+
+.bimg a {
+    display: flex;
+}
+
+.project-bottom-WD p {
+    text-align: center;
+    white-space: nowrap;
+}
+
+ .wrapper hr  {
+    position: relative;
+    top: -8px;
+    border-style: solid;
+}
+
+.wrapper {
+    border-style: solid;
+}
+
+.project-top-WD h1 {
+    position: relative;
+    margin-left: 15%;
+    top: 0px;
+    font-family: 'ClarikaProGeo-Dm';
+    font-size: 2.5rem;
+}
+
+    
+
+#Helix img {
+    position: relative;
+    max-width: 100%;
+}
+
+.project-bottom-WD#Flux {
+     border-bottom-style: none;
+}
+/* -- mobile break  -- */ 
+
+/*@media (max-width: 600px) {
+    .project-bottom-WD p {
+        display: flex;
+        justify-content: center;
+        margin-left: -42%;
+        width: 200%;
+        position: relative;
+        width: 200%;
+        left: 29px;
+    }
+}*/
+
+/* -- tablet break  -- */
+@media (min-width: 601px) and (max-width: 900px) {
+     
+    .pj2 {
+        width: 175%;
+        margin-left: -22%;
+    }
+    
+     /*.project-bottom-WD p {
+       width: 175%;
+    }*/
+
+}
+
+
+/* -- Reg Desktop break  -- */
+
+/* -- Lg Desktop break  -- */
+
+@media(min-width: 1025px) and (max-width:1280px) {
+    
+    /*.project-bottom-WD p {
+        margin-left: 20%;
+    }*/
+
+    .pj2 {
+        margin-left: 12%;
+    }
+}
+
+@media(min-width: 1706px) {
+    /*.project-bottom-WD p {
+        margin-left: 20%;
+    }*/
+
+    .pj2 {
+        margin-left: 12%;
+    }
+}
+
+
+
+
+
+/* ---   WD4: Helix  --- */
+
+#Wrapper-WD4 {
+    border-style: solid;
+    justify-items: center;
+    
+}
+
+#wd4-top {
+    display: inline-block;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+@media (min-width:959px) {
+
+    #wd4-top {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+
+#wd4-top h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+@media (min-width:959px) {
+
+    #wd4-top {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#wd4-top h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 5%;
+}
+
+#wd4-top h3 {
+    position: relative;
+    top: 26px;
+    font-family: 'ClarikaProGeo-Bd';
+    margin-bottom: 32px;
+}
+
+
+#wd4-bottom {
+    background-color: #ffe039;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;*/
+    padding: 10%;
+    width: -webkit-fill-available;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pages-wd4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+    
+}
+
+
+.pages-wd4 img {
+    height: 85%;
+    width: 85%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    align-self: flex-start;
+    /*position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    
+}
+
+.pages-wd4 p {
+    font-family: 'ClarikaProGeo-Lt';
+    text-align: center;
+    width: 80%;
+    /*position: relative;
+    top: 3%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    clear: both;*/
+}
+
+#helix-link {
+    background-color: #ffe039;
+    font-family: 'Bozon-Bold';
+    display: flex;
+    justify-content: center;
+    /*width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: -100px;*/
+}
+
+
+
+
+/* ---   WD3: TWAR  --- */
+
+#Wrapper-WD3 {
+    border-style: solid;
+    justify-items: center;
+    overflow: hidden;
+}
+
+#wd3-top {
+    display: inline-block;
+    padding: 6.5%; 
+   /* --- great proportion */
+    padding: 6.5% 9% 6.5% 18%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+@media (min-width:959px) {
+
+    #wd3-top {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+
+#wd3-top h2 {
+    /*padding-top: 2.5%;
+    padding-left: 5.5%;*/
+    font-family: 'ClarikaProGeo-DmIt';
+    position: relative;
+    top: 45px;
+    margin-top: -3%;
+}
+
+@media (min-width:959px) {
+
+    #wd3-top {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#wd3-top h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 5rem;
+    position: relative;
+    left: 5%;
+}
+
+#wd3-top h3 {
+    position: relative;
+    top: 26px;
+    font-family: 'ClarikaProGeo-Bd';
+    margin-bottom: 32px;
+}
+
+p#work_copy_wd3 {
+    font-family: 'ClarikaProGeo-Md';
+    position: relative;
+    top: -33px;
+    width: 80%;
+    text-align: justify;
+}
+
+#wd3-bottom {
+    background-color: #ffe039;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;*/
+    padding: 10%;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.pages-wd3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+    
+}
+
+
+.pages-wd3 img {
+    width: 85%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    align-self: flex-start;
+    /*position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    
+}
+
+.pages-wd3 p {
+    font-family: 'ClarikaProGeo-Lt';
+    text-align: center;
+    width: 80%;
+    /*position: relative;
+    top: 3%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    clear: both;*/
+}
+
+@media (max-width: 600px) {
+    #wd3-top h2 {
+        top: 35px;
+        font-size: 1.3rem;
+    }
+    #wd3-top h1 {
+        font-size: 3rem;
+    }
+    p#work_copy_wd3 {
+        font-size: .8rem;
+        top: -21px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+     #wd3-top h1 {
+        font-size: 3.4rem;
+    }
+}
+
+
+
+
+
+
+/* ---   CA: Creatives  --- */
+
+#intro-ca {
+    display: inline-block;
+    padding: 6.5%; 
+   /* --- great proportion */
+    background-color: #ffe039;
+    padding: 6.5% 9% 10% 18%;
+}
+
+@media (min-width:959px) {
+    #intro-ca {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
+
+#intro-ca h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 6rem;
+    position: relative;
+    left: 2%;
+}
+
+#intro-ca p {
+    font-family: 'ClarikaProGeo-Md';
+    width: 85%;
+    text-align: justify;
+    position: relative;
+    bottom: 35px;
+}
+
+/* .ca-box {
+    display: inline-block;
+} */
+
+.ca-catbox {
+    position: relative;
+     /*height: 200px;*/
+    width: 278px;
+    left: 4.5%;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    /*top: 20px;*/
+
+    background-color: #ffe039;
+}
+
+.ca-catbox h1 {
+    font-family: 'ClarikaProGeo-Dm';
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ca-box h2 {
+    position: relative;
+    left: 8.5%;
+    font-family: 'ClarikaProGeo-Dm';
+    top: 20px;
+}
+
+.ca-box > img {
+    margin: 1%;
+    position: relative;
+    width: 80%;
+    left: 7.5%;
+}
+
+.ca-box p {
+    text-align: justify;
+    font-family: 'ClarikaProGeo-Rg';
+    margin-left: 5%;
+    margin-right: 7%;
+    margin-bottom: 10%;
+}
+
+.ca-box #film_vid {
+    margin: 3%;
+}
+
+
+
+/* ---   AM: About Me  --- */
+
+#wrapper-am {
+   border-style: solid;
+   color: black;
+}
+
+#intro-am {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-am {
+    position: relative;
+    width: 478px;
+    margin:6% 30% 1% 30%;
+    align-items: center;
+     /*height: 200px;
+    
+    left: 4.5%;
+    margin-top: 45px;
+    margin-bottom: 20px;*/
+    /*top: 20px;*/
+    
+}
+
+#title-am h1 {
+    font-family: 'ClarikaProGeo-Hvy';
+    font-size: 5rem;
+    text-align: center;
+    background-color: #ffe039;
+}
+
+#intro-am p {
+    margin:6% 30% 8% 32%;
+    font-family: 'ClarikaProGeo-Md';
+    text-align: justify;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills h2 {
+    position: relative;
+    left: 20%;
+    font-family: 'ClarikaProGeo-Dm';
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #ffe039;
+    text-decoration-thickness: 5px;
+}
+
+#skills-block {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+    
+}
+
+#skills-block ul {
+    font-size: 1.2rem;
+    font-family: 'ClarikaProGeo-Lt';
+}
+
+#courses-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 150px;
+}
+
+#cbox h3 {
+    font-family: 'ClarikaProGeo-Dm';
+    font-size: 1.2rem;
+}
+
+#cbox li {
+    font-size: 1rem;
+    font-family: 'ClarikaProGeo-Lt';
+}
+
+#contact-p {
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+    position: relative;
+    margin: 5% 18% 18% 18%;
+    border: 1px solid #ffe039;
+    padding: 88px;
+    width: 50%;
+
+}
+
+#contact-p h2 {
+    position: relative;
+    /*left: 20%;*/
+    font-family: 'ClarikaProGeo-Dm';
+    font-size: 2rem;
+}
+
+#contact-p p {
+    position: relative;
+    left: 5%;
+    font-family: 'ClarikaProGeo-Rg';
+}
+
+/*#skills hr {
+    position: relative;
+    top: -25px;
+    left: -27%;
+    margin: auto;
+    height: 2px;
+    color: #ffe039;
+    background-color: #ffe039;
+    width: 100px;
+    border-style: solid;
+}*/
