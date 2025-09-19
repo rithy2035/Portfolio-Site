@@ -1250,16 +1250,23 @@ p#work_copy {
     margin-bottom: 8%;
 }
 
-#surfacevidbox {
-    width: 240px;
-    height: 515px;
-    background-color: whitesmoke;
-    margin: auto;
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
 }
 
-#surface video {
-    margin-top: 10%;
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
+
+
+
+
 
 
 /* ---   UI3: UI/UX Dodecagon   --- */
