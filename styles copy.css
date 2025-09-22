@@ -1,6 +1,27 @@
 
 
 @font-face {
+  font-family: 'Bozon-DemiBoldItalic'; 
+  src: url('fonts/Bozon-DemiBoldItalic.woff2') format('woff2'),
+       url('fonts/Bozon-DemiBoldItalic.woff') format('woff'),
+       url('fonts/Bozon-DemiBoldItalic.otf') format('opentype');
+  font-weight: 600;   
+  font-style: italic; 
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Biennale-SemiBold'; 
+  src: url('fonts/Biennale-SemiBold.woff2') format('woff2'),
+       url('fonts/Biennale-SemiBold.woff') format('woff'),
+       url('fonts/Biennale-SemiBold.otf') format('opentype');
+  font-weight: 600;   
+  font-style: normal; 
+  font-display: swap;
+}
+
+@font-face {
     font-family: 'Bozon';
     src: url(fonts/Bozon-DemiBoldItalic.otf);
 }
