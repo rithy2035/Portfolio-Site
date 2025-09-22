@@ -43,173 +43,148 @@ a:hover {
 
 /* --- Main Nav Header --- */
 
-/* >> New Drop-Down Nav Tryout << */
-
-
+/* --- Navbar Layout --- */
 .navbar {
   display: flex;
-  justify-content: space-between; /* logo left, menu right */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  background: #fcfffa;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: relative;
+  height: 35px;
   border-style: solid;
   border-bottom: none;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.logo img {
+  height: 40px;
+}
+
+/* --- Desktop Nav Links --- */
+.nav-links {
   display: flex;
-  background: white;
+  list-style: none;
+  gap: .5rem;
   font-family: 'Bozon-DemiBoldItalic';
-
- 
-  /*height: 35px;*/
-  
-  display: flex;
-  justify-content: space-between;
-
 }
 
-.nav-left .logo {
-  height: 50px; /* adjust to your preferred logo size */
-}
-
-.nav-right {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 20px; /* controls spacing between menu items */
-}
-
-.navbar ul li {
-  position: relative; /* needed for dropdown positioning */
-
-}
-
-.navbar ul li a {
-  display: block;
-  padding: 14px 20px;
-  color: black;
+.nav-links a {
   text-decoration: none;
-  border: 1px solid transparent; /* keeps layout stable */
+  color: #333;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent; /* invisible by default */
+  transition: border 0.2s ease;
 }
 
-.navbar ul li:hover > a {
-  border: 1px solid; /* or your brand color */
-  background: white; /* optional, keeps background consistent */
+.nav-links a:hover {
+  border: 1px solid black; /* solid border on hover */
 }
 
-/*.navbar ul li a:hover {
-    background: #dedddd;
-    border-style: solid;
-}*/ 
 
-.navbar ul li .dropdown-menu {
+
+/* --- Dropdown Menu (desktop only) --- */
+.dropdown {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  background: #fff;   /* solid fill so background doesn’t show through */
+  color: #000;        /* text stays readable */
+  z-index: 11;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.5rem 1rem;   /* space inside each link */
+  color: #000;
+}
+
+.dropdown li a:hover {
+  background: #f0f0f0;    /* subtle hover background */
+}
+
+.nav-links li {
+  position: relative;
+  
+}
+
+.nav-links li:hover > .dropdown {
+  display: block;
   font-family: 'Bozon-Regular';
 }
 
-/* Dropdown menu hidden by default */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%; /* directly below parent */
-  left: 0;
-  background: #444;
-  min-width: 160px;
-   border-style: solid;
-  z-index: 1000; /* ensures it appears above other elements */
-}
-
-/* Dropdown links */
-.dropdown-menu li a {
-  padding: 12px;
-  white-space: nowrap; /* prevent line breaks */
-}
-
-/* Keep dropdown visible when hovering parent OR submenu */
-.dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-  display: block;
-}
-
-/* Optional: smooth hover transition */
-.dropdown-menu {
-  transition: opacity 0.2s ease;
-  opacity: 0;
-}
-
-.dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-  opacity: 1;
-}
-
-
-
-/*.navbar {
-    border-style: solid;
-    /*background-color:aqua;
-    height: 35px;
-    /*display: inline-block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: none;
-    position: relative;
-   /* width: 100vh;
-} */
-
-#logo {
-    height: 2rem;
-    width: 2rem;
-    display: inline;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-
-}
-
-.text-headers {
-    padding-right: 10px;
-    display: flex;
-    gap: 30px;
-    /*display: flex;
-    justify-content: flex-end;*/
-}
-/*ul li {
-    display: inline;
-}*/
-
-.text-headers a {
-    font-family: 'Bozon-DemiBoldItalic';
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fcfffa;
-    min-width: 160px;
-}
-
+/* --- Hamburger (mobile only) --- */
 .hamburger {
-    display: none;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-    padding: 10px;
-    padding-top: 13px;
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
 }
+
+/* --- Mobile Menu --- */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  top: 60px; /* height of navbar */
+  right: 0;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  background: #fff;   /* makes it solid */
+  z-index: 1200;
+}
+
+.mobile-menu a {
+  /*padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;*/
+  padding: 0.75rem 1rem;
+  border: 1px solid transparent; /* match hover style */
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  border: 1px solid black;       /* border on hover */
+  background: #f0f0f0;           /* subtle background fill */
+}
+
+
+
+.mobile-menu.active {
+  display: flex;
+}
+
+/* --- Responsive Switch --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide desktop links */
+  }
+  .hamburger {
+    display: block; /* show hamburger */
+  }
+
+  .mobile-menu {
+    font-family: 'Bozon-Regular';
+  }
+}
+
 
 /* Small screen rules */
 
 @media (max-width: 600px) {
     .hamburger {
         display: block;
+        z-index: 1;
     }
 
     .text-headers {
@@ -228,7 +203,6 @@ a:hover {
         display: flex;
     }
 }
-
 
 
 /* --- Homepage --- */
