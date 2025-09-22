@@ -21,10 +21,11 @@
   font-display: swap;
 }
 
+/* Old test block – causes conflicts
 @font-face {
     font-family: 'Bozon';
     src: url(fonts/Bozon-DemiBoldItalic.otf);
-}
+} */
 
 a:link {
     color: black;
