@@ -66,6 +66,8 @@ a:hover {
   list-style: none;
   gap: .5rem;
   font-family: 'Bozon-DemiBoldItalic';
+  font-weight: 600;
+  font-style: italic;
 }
 
 .nav-links a {
