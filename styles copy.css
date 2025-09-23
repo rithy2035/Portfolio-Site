@@ -165,6 +165,7 @@ a:hover {
 
 .mobile-menu.active {
   display: flex;
+  flex-direction: column;
 }
 
 /* --- Responsive Switch --- */
