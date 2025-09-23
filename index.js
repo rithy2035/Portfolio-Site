@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+burger.addEventListener("click", () => {
+  console.log("Hamburger clicked!");
+  mobileMenu.classList.toggle("active");
+});
+
+
 // --------------------
 // GD1 Nav-Box Pop-up
 // --------------------
