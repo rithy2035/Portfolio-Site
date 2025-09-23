@@ -3,12 +3,22 @@
 // --------------------
 
 // Grab elements
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("text-headers");
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".hamburger");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-// Add click event
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  // Toggle menu open/close
+  burger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+
+  // Optional: remove 'active' when clicking a link
+  const menuLinks = document.querySelectorAll(".mobile-menu a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  });
 });
 
 
