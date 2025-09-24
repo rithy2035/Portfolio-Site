@@ -2,29 +2,29 @@
 // Hamgburger Menu Toggle
 // --------------------
 
-// Grab elements
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".hamburger");
   const mobileMenu = document.querySelector(".mobile-menu");
 
-  // Toggle menu open/close
+  // Toggle open/close
   burger.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
   });
 
-  // Optional: remove 'active' when clicking a link
+  // Close menu when clicking a link
   const menuLinks = document.querySelectorAll(".mobile-menu a");
   menuLinks.forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("active");
     });
   });
-});
 
-
-burger.addEventListener("click", () => {
-  console.log("Hamburger clicked!");
-  mobileMenu.classList.toggle("active");
+  // Auto-close if resizing back to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      mobileMenu.classList.remove("active");
+    }
+  });
 });
 
 
