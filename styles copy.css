@@ -134,6 +134,8 @@ a:hover {
   font-family: 'Bozon-Regular';
   font-weight: 500;
   font-style: normal;
+  border: 1px solid red;
+    
 }
 
 /* --- Hamburger (mobile only) --- */
