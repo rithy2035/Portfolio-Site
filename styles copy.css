@@ -1,4 +1,33 @@
 
+@font-face {
+    font-family: 'Biennale-UltraLightIt';
+    src: url('fonts/Biennale-UltraLightIt.woff2') format('woff2'),
+         url('fonts/Biennale-UltraLightIt.woff') format('woff'),
+         url('fonts/Biennale-UltraLightIt.oft') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeogroteskEss-Bold';
+    src: url('fonts/NeogroteskEss-Bold.woff2') format('woff2'),
+         url('fonts/NeogroteskEss-Bold.woff') format('woff'),
+         url('fonts/NeogroteskEss-Bold.oft') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biennale-Black';
+    src: url('fonts/Biennale-Black.woff2') format('woff2'),
+         url('fonts/Biennale-Black.woff') format('woff'),
+         url('fonts/Biennale-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 
@@ -341,6 +370,8 @@ a:hover {
 
 #wel-top h1 {
     font-family: 'Biennale-Black';
+    font-weight: 900;
+    font-style: normal;
     font-size: 6rem;
     line-height: 90%;
 }
@@ -361,6 +392,8 @@ a:hover {
 
 #wel-bottom h2 {
     font-family: 'NeogroteskEss-Bold';
+    font-weight: bold;
+    font-style: normal;
     color: #fcfffa;
     font-size: 3rem;
     margin-left: 20%;
@@ -369,6 +402,8 @@ a:hover {
 
 #wel-bottom p {
     font-family: 'Biennale-UltraLightIt';
+    font-weight: 300;
+    font-style: normal;
     margin-left: 20%;
     font-size: 1.5rem;
 }
