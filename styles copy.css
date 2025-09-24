@@ -6,7 +6,7 @@
     font-family: 'Bozon-Regular';
     src: url('fonts/Bozon-Regular.woff2') format('woff2'),
          url('fonts/Bozon-Regular.woff') format('woff'),
-         url('fonts/Bozon-DemiBoldItalic.otf') format('opentype');
+         url('fonts/Bozon-Regular.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
