@@ -131,6 +131,8 @@ a:hover {
 .nav-links li:hover > .dropdown {
   display: block;
   font-family: 'Bozon-Regular';
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* --- Hamburger (mobile only) --- */
