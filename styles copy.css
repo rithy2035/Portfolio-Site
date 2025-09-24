@@ -3,7 +3,7 @@
     font-family: 'Biennale-UltraLightIt';
     src: url('fonts/Biennale-UltraLightIt.woff2') format('woff2'),
          url('fonts/Biennale-UltraLightIt.woff') format('woff'),
-         url('fonts/Biennale-UltraLightIt.oft') format('opentype');
+         url('fonts/Biennale-UltraLightIt.otf') format('opentype');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -13,7 +13,7 @@
     font-family: 'NeogroteskEss-Bold';
     src: url('fonts/NeogroteskEss-Bold.woff2') format('woff2'),
          url('fonts/NeogroteskEss-Bold.woff') format('woff'),
-         url('fonts/NeogroteskEss-Bold.oft') format('opentype');
+         url('fonts/NeogroteskEss-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
