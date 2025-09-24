@@ -402,8 +402,8 @@ a:hover {
 
 #wel-bottom p {
     font-family: 'Biennale-UltraLightIt';
-    font-weight: 300;
-    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
     margin-left: 20%;
     font-size: 1.5rem;
 }
