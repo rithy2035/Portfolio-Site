@@ -304,7 +304,8 @@ a:hover {
   width: 137px;       /* shrink-wrap to content */
   max-width: 200px;         /* don’t let it blow out too wide */
   text-align: center;
-  text-wrap: nowrap;
+  white-space: nowrap;
+
 }
 
 
