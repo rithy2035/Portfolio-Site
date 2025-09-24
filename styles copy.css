@@ -64,7 +64,7 @@ a:hover {
   align-items: center;
   position: relative;
   height: 35px;
-  border-style: solid;
+  border: 1px solid black;
   border-bottom: none;
 }
 
@@ -233,7 +233,7 @@ a:hover {
 
 .herosquare {
     /*background-color: aqua;*/
-    border-style: solid;
+    border: 1px solid black;
     display: flex;
 }
 
