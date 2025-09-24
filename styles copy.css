@@ -134,7 +134,7 @@ a:hover {
   font-family: 'Bozon-Regular';
   font-weight: 500;
   font-style: normal;
-  border: 1px solid red;
+  border: 1px solid black;
     
 }
 
@@ -248,6 +248,14 @@ a:hover {
     justify-content: center;
 }*/
 
+.squares {
+  display: flex;
+  flex-direction: column;   /* stack children vertically */
+  justify-content: flex-end; /* push content to the bottom */
+  align-items: center;      /* center horizontally */
+  height: 100%;             /* make the square fill its container */
+  position: relative;
+}
 
 
 #squareone {
@@ -280,18 +288,23 @@ a:hover {
 
 }
 
+.cat-box {
+  display: flex;
+  justify-content: center;  /* center the label horizontally */
+  width: 100%;
+}
+
 #square-text {
-    position: relative;
-    top: 80%;
-    text-align: center;
-    background-color: #ffe039;
-    width: 178px;
-    left: 30%;
-    border: 5px solid #fcfffa;
-    z-index: 1;
-    font-family: 'Biennale-SemiBold';
-
-
+  background-color: #ffe039;
+  /*padding: 0.5rem 1rem;*/
+  border: 3px solid #fcfffa;
+  font-family: 'Biennale-SemiBold';
+  font-size: .85rem;
+  margin-bottom: 1rem;      /* breathing room from bottom */
+  position: static;     
+  width: 137px;       /* shrink-wrap to content */
+  max-width: 200px;         /* don’t let it blow out too wide */
+  text-align: center;
 }
 
 
