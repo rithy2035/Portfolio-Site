@@ -349,8 +349,7 @@ a:hover {
 }
 
 .welcome_message {
-    border-style: solid;
-    color: black;
+    border: 1px solid black;
 }
 
 #wel-bottom {
