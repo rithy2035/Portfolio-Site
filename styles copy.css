@@ -1,5 +1,17 @@
 
 
+
+
+@font-face {
+    font-family: 'Bozon-Regular';
+    src: url('fonts/Bozon-Regular.woff2') format('woff2'),
+         url('fonts/Bozon-Regular.woff') format('woff'),
+         url('fonts/Bozon-DemiBoldItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
   font-family: 'Bozon-DemiBoldItalic'; 
   src: url('fonts/Bozon-DemiBoldItalic.woff2') format('woff2'),
@@ -138,7 +150,7 @@ a:hover {
   position: absolute;
   top: 60px; /* height of navbar */
   right: 0;
-  width: 200px;
+  width: 130px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   background: #fff;   /* makes it solid */
   z-index: 1200;
