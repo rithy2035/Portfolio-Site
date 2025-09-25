@@ -549,13 +549,14 @@ a:hover {
     height: 480px;
     /*width: 100%;*/
     /* width: 1657px; */
-    border-style: solid;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;  /* stack .text-box + paragraph */
     align-items: center;     /* center children horizontally */
     justify-content: center;
     gap: 20px;               /* space between them */
     padding: 20px;
+    border-bottom: none;
 }
 
 .text-box {
@@ -601,16 +602,17 @@ margin-left: 2%;
 }
 .text-box-left {
     height: 480px;
-    border-style: solid;
+    border: 1px solid black;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: none; 
 }
 
 .text-box-right {
     height: 480px;
-    border-style: solid;
+    border: 1px solid black;
     width: 50%;
     display: flex;
     justify-content: center;
