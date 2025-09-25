@@ -5,6 +5,16 @@ html, body {
 }
 
 @font-face {
+    font-family: 'Biennale-Light';
+    src: url('fonts/Biennale-Light.woff2') format('woff2'),
+         url('fonts/Biennale-Light.woff') format('woff'),
+         url('fonts/Biennale-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Biennale-UltraLightIt';
     src: url('fonts/Biennale-UltraLightIt.woff2') format('woff2'),
          url('fonts/Biennale-UltraLightIt.woff') format('woff'),
@@ -598,15 +608,12 @@ margin-left: 2%;
 #bottom {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* keep them aligned at the top edge */
 }
 .text-box-left {
     height: 480px;
     border: 1px solid black;
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-right: none; 
 }
 
@@ -614,9 +621,6 @@ margin-left: 2%;
     height: 480px;
     border: 1px solid black;
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo-box {
@@ -644,6 +648,47 @@ margin-left: 2%;
     font-family: 'Biennale-Light';
     text-align: justify;
 }
+
+.text-box-left, 
+.text-box-right {
+  display: flex;
+  flex-direction: column;       /* stack children vertically */
+  align-items: center;          /* center the yellow box horizontally */
+  text-align: left;             /* description text can still align left */
+  justify-content: center; 
+}
+
+#bottom p.desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  font-family: 'Biennale-Light';
+  text-align: justify;
+  padding: 1%;
+  margin: 5%;
+}
+
+.type-animate span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInUp 0.4s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 
 /* -- mobile break -- */
 @media (max-width:600px) {
@@ -685,6 +730,12 @@ margin-left: 2%;
 
     #bottom p {
         font-size: 1.48rem;
+    }
+
+    @media (max-width: 768px) {
+        #bottom p.desc {
+            display: none;
+        }
     }
 
 
