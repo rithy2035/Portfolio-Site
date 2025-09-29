@@ -712,6 +712,8 @@ margin-left: 2%;
 
     #bottom {
         flex-direction: column;
+        width: calc(100% - 1px); /* nudge in just a hair */
+}
     }
 
     .text-box-left {
