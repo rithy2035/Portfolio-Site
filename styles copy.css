@@ -715,6 +715,7 @@ margin-left: 2%;
     .text-box-left {
         height: 250px;
         width: 100%;
+        border-bottom: none;
     }
 
     .text-box-right {
