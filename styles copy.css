@@ -715,42 +715,45 @@ margin-left: 2%;
     #bottom {
         flex-direction: column;
          border-right: 1px solid black; /* explicit */
-}
     }
-
-    .text-box-left {
-        height: 250px;
-        width: 100%;
-        border-bottom: none;
-    }
-
-    .text-box-right {
-        height: 250px;
-        width: 100%;
-    }
-
-    .logo-box {
-        height: 35px;
-        width: 118px;
-    }
-
-    #bottom p {
-        font-size: 1.48rem;
-    }
-
-    @media (max-width: 768px) {
-        #bottom p.desc {
-            display: none;
         }
+    
+        .text-box-left {
+            height: 250px;
+            width: 100%;
+            border-bottom: none;
+        }
+    
+        .text-box-right {
+            height: 250px;
+            width: 100%;
+        }
+    
+        .logo-box {
+            height: 35px;
+            width: 118px;
+        }
+    
+        #bottom p {
+            font-size: 1.48rem;
+        }
+    
+        @media (max-width: 768px) {
+            #bottom p.desc {
+                display: none;
+            }
+        }
+    
     }
 
 
+/* -- Resize for Safari+ -- */
 
-
-
-
+@media(min-width: 601px) {
+  .text-box-left,
+  .text-box-right {
+    height: 480px;
 }
-
 
 /* ---   GD1: Graphic Design Project   --- */
 
