@@ -737,14 +737,12 @@ margin-left: 2%;
         #bottom p {
             font-size: 1.48rem;
         }
-    
-        @media (max-width: 768px) {
+    }
+ @media (max-width: 768px) {
             #bottom p.desc {
                 display: none;
             }
         }
-    
-    }
 
 
 /* -- Resize for Safari+ -- */
