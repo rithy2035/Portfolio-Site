@@ -614,14 +614,14 @@ margin-left: 2%;
     height: 480px;
 }
 .text-box-left {
-    height: 480px;
+    height: 480px !important;
     border: 1px solid black;
     width: 50%;
     border-right: none; 
 }
 
 .text-box-right {
-    height: 480px;
+    height: 480px !important;
     border: 1px solid black;
     width: 50%;
 }
