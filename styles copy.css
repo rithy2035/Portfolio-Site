@@ -611,7 +611,6 @@ margin-left: 2%;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* keep them aligned at the top edge */
-    height: 480px;
 }
 .text-box-left {
     height: 480px;
@@ -702,6 +701,7 @@ margin-left: 2%;
 
     #top h1 {
         font-size: 2.4rem;
+        white-space: nowrap;
     }
     .text-box {
         width: 248px;
