@@ -6,6 +6,55 @@ html, body {
   overflow-x: hidden;
 }
 
+
+
+@font-face {
+    font-family: 'ClarikaProGeo-Lt';
+    src: url('fonts/ClarikaProGeo-Lt.woff2') format('woff2'),
+         url('fonts/ClarikaProGeo-Lt.woff') format('woff'),
+         url('fonts/ClarikaProGeo-Lt.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'ClarikaProGeo-Dm';
+    src: url('fonts/ClarikaProGeo-Dm.woff2') format('woff2'),
+        url('fonts/ClarikaProGeo-Dm.woff') format('woff'),
+        url('fonts/ClarikaProGeo-Md.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'ClarikaProGeo-Md';
+    src: url('fonts/ClarikaProGeo-Md.woff2') format('woff2'),
+         url('fonts/ClarikaProGeo-Md.woff') format('woff'),
+         url('fonts/ClarikaProGeo-Md.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'ClarikaProGeo-Hvy';
+    src: url('fonts/ClarikaProGeo-Hvy.woff2') format('woff2'),
+         url('fonts/ClarikaProGeo-Hvy.woff') format('woff'),
+         url('fonts/ClarikaProGeo-DmIt.otf') format('opentype');
+  
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'ClarikaProGeo-DmIt';
     src: url('fonts/ClarikaProGeo-DmIt.woff2') format('woff2'),
@@ -1674,6 +1723,8 @@ p#work_copy {
 
 #intro-wd1 h1 {
     font-family: 'ClarikaProGeo-Hvy';
+    font-weight: 800;
+    font-style: normal;
     font-size: 6rem;
     position: relative;
     left: 5%;
@@ -1681,6 +1732,8 @@ p#work_copy {
 
 #intro-wd1 p {
     font-family: 'ClarikaProGeo-Md';
+    font-weight: 500;
+    font-style: normal;
     width: 85%;
     text-align: justify;
     position: relative;
@@ -1785,6 +1838,8 @@ p#work_copy {
 
 .wd1-whtbox2 h1{
     font-family: 'ClarikaProGeo-Dm';
+    font-weight: 600;
+    font-style: normal;
     /*text-align: center;*/
     text-align: center;
     font-size: 4rem;
@@ -1792,6 +1847,8 @@ p#work_copy {
 
 .wd1-whtbox p {
     font-family: 'ClarikaProGeo-Lt';
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
     text-align: justify;
     font-size: 1.5rem;
@@ -1800,6 +1857,8 @@ p#work_copy {
 
 .wd1-whtbox2 p {
     font-family: 'ClarikaProGeo-Lt';
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
     text-align: justify;
     font-size: 1.5rem;
@@ -1814,6 +1873,8 @@ p#work_copy {
 
 .p2 p {
     font-family: 'ClarikaProGeo-Lt';
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
     text-align: justify;
     font-size: 1rem;
