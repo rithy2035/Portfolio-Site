@@ -2166,7 +2166,7 @@ p#work_copy {
 }
 
 .wrapper {
-    border-style: solid;
+   border: 1px solid black;
 }
 
 .project-top-WD h1 {
