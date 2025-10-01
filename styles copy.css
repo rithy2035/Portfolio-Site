@@ -1741,43 +1741,11 @@ p#work_copy {
 }
 
 
-
-@media (min-width:959px) {
-    #intro-wd1 {
-        padding: 6.5% 15% 6.5% 23%;
-
-    }
-}
-
 #snd-box {
     position: relative;
     background-color: #fcfffa;
     height: 300px;
-    
     width: 100%;
-}
-
-
-
-@media (max-width:708px) {
-    #snd-box {
-        height: 100px;
-
-    }
-}
-
-@media (max-width:507px) {
-    #snd-box {
-        height: 60px;
-
-    }
-}
-
-@media (min-width: 800px) {
-    #snd-box {
-        height: 300px;
-
-    }
 }
 
 #project-wd {
@@ -1972,6 +1940,11 @@ p#work_copy {
         width: 70%;
         margin-right: 10%;
     }
+  
+    #snd-box {
+          height: 60px;
+  
+    }
 }
 
 /* -- tablet break  -- */ 
@@ -2006,15 +1979,28 @@ p#work_copy {
     
     }
 
+    #snd-box {
+          height: 100px;
+    }
+
 
 }
 
 
 /* -- Reg Desktop break  -- */ 
+  
 @media (min-width: 901px) and (max-width: 1124px) {
     .wd1-whtbox2 h1 {
         position: relative;
         bottom: 28px; 
+    }
+
+    #intro-wd1 {
+          padding: 6.5% 15% 6.5% 23%;
+    }
+  
+    #snd-box {
+        height: 300px;
     }
 }
 
