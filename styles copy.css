@@ -872,12 +872,12 @@ margin-left: 2%;
     bottom: 35px;
 }
 
-@media (min-width:959px) {
+/*@media (min-width:959px) {
     #intro {
         padding: 6.5% 15% 6.5% 23%;
 
     }
-}
+}*/
 
 /* Toggle/Drop v3 */
 
@@ -984,7 +984,7 @@ margin-left: 2%;
     justify-content: center;
     width: 100%;
     height: 80%;
-    padding-top: 5%;
+    padding: 5% 10% 5% 10%;
 }
 
 #design-brief img {
@@ -993,11 +993,11 @@ margin-left: 2%;
     max-width: 100%;
 }
 
-@media (max-width:1690px) {
+/*@media (max-width:1690px) {
     #design-brief {
         padding: 5% 10% 5% 10%;
     }
-}
+}*/
 
 #logo-GD {
     display: flex;
