@@ -7,6 +7,16 @@ html, body {
 }
 
 @font-face {
+    font-family: 'ClarikaProGeo-DmIt';
+    src: url('fonts/ClarikaProGeo-DmIt.woff2') format('woff2'),
+         url('fonts/ClarikaProGeo-DmIt.woff') format('woff'),
+         url('fonts/ClarikaProGeo-DmIt.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Biennale-Light';
     src: url('fonts/Biennale-Light.woff2') format('woff2'),
          url('fonts/Biennale-Light.woff') format('woff'),
