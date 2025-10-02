@@ -813,24 +813,26 @@ margin-left: 2%;
 /* -- Resize for Safari+ -- */
 
 @media(min-width: 601px) {
-  .text-box-left,
+    .text-box-left,
+    .text-box-right {
+      height: 480px;
+  }
+  
+  
+  .text-box-left {
+      height: 480px;
+      border: 1px solid black;
+      width: 50%;
+      border-right: none; 
+  }
+  
   .text-box-right {
-    height: 480px;
+      height: 480px;
+      border: 1px solid black;
+      width: 50%;
+  }
 }
-
-
-.text-box-left {
-    height: 480px;
-    border: 1px solid black;
-    width: 50%;
-    border-right: none; 
-}
-
-.text-box-right {
-    height: 480px;
-    border: 1px solid black;
-    width: 50%;
-}
+  
 
 /* ---   GD1: Graphic Design Project   --- */
 
