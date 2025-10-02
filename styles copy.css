@@ -7,6 +7,16 @@ html, body {
 }
 
 
+@font-face {
+    font-family: 'ClarikaProGeo-Rg';
+    src: url('fonts/ClarikaProGeo-Rg.woff2') format('woff2'),
+         url('fonts/ClarikaProGeo-Rg.woff') format('woff'),
+         url('fonts/ClarikaProGeo-Lt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 @font-face {
     font-family: 'ClarikaProGeo-Lt';
@@ -2131,6 +2141,8 @@ p#work_copy {
 
 .bpara {
     font-family: 'ClarikaProGeo-Rg';
+    font-weight: normal;
+    font-style: normal;
     text-align: center;
 
 }
