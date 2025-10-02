@@ -2201,8 +2201,14 @@ p#work_copy {
    align-items: center;
   }
 
+  .project-bottom-WD {
+    width: 100%;       /* full width on mobile */
+   max-width: 600px;  /* cap it for larger screens */
+   margin: 0 auto;    /* keeps it centered */
+  }
+
   .bimg {
-    max-width: 100%;   /* never go beyond the container */
+   width: 70%;
    height: auto;      /* keeps proportions */
    display: block;    /* prevents inline spacing issues */
   }
