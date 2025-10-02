@@ -2190,6 +2190,13 @@ p#work_copy {
 }
 /* -- mobile break  -- */ 
 
+@media (max-width: 600px) {
+  h1.works-title {
+    margin-left: 0;       /* reset so it doesn’t run off screen */
+    text-align: center;   /* center it for small screens */
+  }
+}
+
 /*@media (max-width: 600px) {
     .project-bottom-WD p {
         display: flex;
