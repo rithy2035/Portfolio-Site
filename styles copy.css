@@ -1130,6 +1130,11 @@ margin-left: 2%;
     
 }
 
+  @media (max-width:600px) {
+    #intro {
+        background-color: #000;
+    }
+}
 
 
 
