@@ -2099,12 +2099,7 @@ p#work_copy {
     bottom: 43px;
 }
 
-@media (min-width:959px) {
-    #intro-WD2 {
-        padding: 6.5% 15% 6.5% 23%;
 
-    }
-}
 
 
 
@@ -2195,19 +2190,25 @@ p#work_copy {
     margin-left: 0;       /* reset so it doesn’t run off screen */
     text-align: center;   /* center it for small screens */
   }
+
+  #intro-WD2 {
+    text-align: center;
+  }
+
+  .project-top-WD {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .bimg {
+    max-width: 100%;   /* never go beyond the container */
+   height: auto;      /* keeps proportions */
+   display: block;    /* prevents inline spacing issues */
+  }
+  
 }
 
-/*@media (max-width: 600px) {
-    .project-bottom-WD p {
-        display: flex;
-        justify-content: center;
-        margin-left: -42%;
-        width: 200%;
-        position: relative;
-        width: 200%;
-        left: 29px;
-    }
-}*/
 
 /* -- tablet break  -- */
 @media (min-width: 601px) and (max-width: 900px) {
@@ -2225,6 +2226,13 @@ p#work_copy {
 
 
 /* -- Reg Desktop break  -- */
+
+@media (min-width:959px) {
+    #intro-WD2 {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
 
 /* -- Lg Desktop break  -- */
 
