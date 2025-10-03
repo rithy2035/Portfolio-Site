@@ -2186,32 +2186,11 @@ p#work_copy {
 /* -- mobile break  -- */ 
 
 @media (max-width: 600px) {
-  h1.works-title {
-    margin-left: 0;       /* reset so it doesn’t run off screen */
-    text-align: center;   /* center it for small screens */
+
+  #intro-WD2 h1 {
+    margin-left: 10px;
   }
 
-  #intro-WD2 {
-    text-align: center;
-  }
-
-  .project-top-WD {
-    display: flex;
-   justify-content: center;
-   align-items: center;
-  }
-
-  .project-bottom-WD {
-    width: 100%;       /* full width on mobile */
-   max-width: 600px;  /* cap it for larger screens */
-   margin: 0 auto;    /* keeps it centered */
-  }
-
-  .bimg {
-   width: 70%;
-   height: auto;      /* keeps proportions */
-   display: block;    /* prevents inline spacing issues */
-  }
   
 }
 
