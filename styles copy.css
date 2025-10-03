@@ -2191,6 +2191,16 @@ p#work_copy {
     margin-left: 10px;
   }
 
+  .project-top-WD {
+    height: auto; 
+  }
+
+  .bimg {
+   width: 70%;
+   height: auto;      /* keeps proportions */
+   display: block;    /* prevents inline spacing issues */
+  }
+
   
 }
 
