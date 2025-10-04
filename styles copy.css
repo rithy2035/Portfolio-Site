@@ -2195,6 +2195,10 @@ p#work_copy {
     height: auto; 
   }
 
+  .project-bottom-WD {
+    padding-left: 0;
+  }
+
   .bimg {
    width: 70%;
    height: auto;      /* keeps proportions */
