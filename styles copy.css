@@ -2419,7 +2419,7 @@ p#work_copy {
 /* ---   WD3: TWAR  --- */
 
 #Wrapper-WD3 {
-    border-style: solid;
+    border: 1px solid black;
     justify-items: center;
     overflow: hidden;
 }
@@ -2434,34 +2434,24 @@ p#work_copy {
     border-bottom-color: black;
 }
 
-@media (min-width:959px) {
-
-    #wd3-top {
-        padding: 6.5% 15% 6.5% 23%;
-
-    }
-}
 
 
 #wd3-top h2 {
     /*padding-top: 2.5%;
     padding-left: 5.5%;*/
     font-family: 'ClarikaProGeo-DmIt';
+    font-weight: 600;
+    font-style: italic;
     position: relative;
     top: 45px;
     margin-top: -3%;
 }
 
-@media (min-width:959px) {
-
-    #wd3-top {
-        padding: 6.5% 15% 6.5% 23%;
-
-    }
-}
 
 #wd3-top h1 {
     font-family: 'ClarikaProGeo-Hvy';
+    font-weight: 800;
+    font-style: normal;
     font-size: 5rem;
     position: relative;
     left: 5%;
@@ -2541,7 +2531,8 @@ p#work_copy_wd3 {
         font-size: 1.3rem;
     }
     #wd3-top h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+        margin: 13% 4% 13% 4%;
     }
     p#work_copy_wd3 {
         font-size: .8rem;
@@ -2552,6 +2543,14 @@ p#work_copy_wd3 {
 @media (min-width: 601px) and (max-width: 900px) {
      #wd3-top h1 {
         font-size: 3.4rem;
+    }
+}
+
+@media (min-width:959px) {
+
+    #wd3-top {
+        padding: 6.5% 15% 6.5% 23%;
+
     }
 }
 
