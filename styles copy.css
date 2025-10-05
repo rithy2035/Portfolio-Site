@@ -2296,14 +2296,6 @@ p#work_copy {
     border-bottom-color: black;
 }
 
-@media (min-width:959px) {
-
-    #wd4-top {
-        padding: 6.5% 15% 6.5% 23%;
-
-    }
-}
-
 
 #wd4-top h2 {
     /*padding-top: 2.5%;
@@ -2316,13 +2308,6 @@ p#work_copy {
     margin-top: -3%;
 }
 
-@media (min-width:959px) {
-
-    #wd4-top {
-        padding: 6.5% 15% 6.5% 23%;
-
-    }
-}
 
 #wd4-top h1 {
     font-family: 'ClarikaProGeo-Hvy';
@@ -2411,6 +2396,23 @@ p#work_copy {
     bottom: -100px;*/
 }
 
+/* -- mobile break  -- */ 
+@media (max-width: 600px) {
+  #helix-link {
+    font-size: .75rem;
+  }
+  
+}
+
+
+
+@media (min-width:959px) {
+
+    #wd4-top {
+        padding: 6.5% 15% 6.5% 23%;
+
+    }
+}
 
 
 
