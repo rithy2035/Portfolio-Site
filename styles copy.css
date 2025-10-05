@@ -76,6 +76,15 @@ html, body {
 }
 
 @font-face {
+    font-family: 'ClarikaProGeo-Bd';
+    src: url('fonts/ClarikaProGeo-Bd.woff2') format('woff2'),
+         url('fonts/ClarikaProGeo-Bd.woff') format('woff'),
+         url('fonts/ClarikaProGeo-DmIt.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Biennale-Light';
     src: url('fonts/Biennale-Light.woff2') format('woff2'),
          url('fonts/Biennale-Light.woff') format('woff'),
@@ -145,6 +154,16 @@ html, body {
        url('fonts/Biennale-SemiBold.otf') format('opentype');
   font-weight: 600;   
   font-style: normal; 
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bozon-Bold';
+  src: url('fonts/Bozon-Bold.woff2') format('woff2'),
+       url('fonts/Bozon-Bold.woff') format('woff'),
+       url('fonts/Biennale-SemiBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -2262,7 +2281,7 @@ p#work_copy {
 /* ---   WD4: Helix  --- */
 
 #Wrapper-WD4 {
-    border-style: solid;
+    border: 1px solid black;
     justify-items: center;
     
 }
@@ -2290,6 +2309,8 @@ p#work_copy {
     /*padding-top: 2.5%;
     padding-left: 5.5%;*/
     font-family: 'ClarikaProGeo-DmIt';
+    font-weight: 600;
+    font-style: italic;
     position: relative;
     top: 45px;
     margin-top: -3%;
@@ -2305,6 +2326,8 @@ p#work_copy {
 
 #wd4-top h1 {
     font-family: 'ClarikaProGeo-Hvy';
+    font-weight: 800;
+    font-style: normal;
     font-size: 6rem;
     position: relative;
     left: 5%;
@@ -2314,6 +2337,8 @@ p#work_copy {
     position: relative;
     top: 26px;
     font-family: 'ClarikaProGeo-Bd';
+    font-weight: bold;
+    font-style: normal;
     margin-bottom: 32px;
 }
 
@@ -2350,7 +2375,7 @@ p#work_copy {
 .pages-wd4 img {
     height: 85%;
     width: 85%;
-    object-fit: contain;
+    /*object-fit: contain; */
     object-position: 50% 50%;
     align-self: flex-start;
     /*position: relative;
@@ -2362,6 +2387,8 @@ p#work_copy {
 
 .pages-wd4 p {
     font-family: 'ClarikaProGeo-Lt';
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
     width: 80%;
     /*position: relative;
@@ -2374,6 +2401,8 @@ p#work_copy {
 #helix-link {
     background-color: #ffe039;
     font-family: 'Bozon-Bold';
+    font-weight: bold;
+    font-style: normal;
     display: flex;
     justify-content: center;
     /*width: 100%;
