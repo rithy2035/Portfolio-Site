@@ -2399,7 +2399,7 @@ p#work_copy {
 /* -- mobile break  -- */ 
 @media (max-width: 600px) {
   #helix-link {
-    font-size: .75rem;
+    font-size: .60rem;
   }
   
 }
