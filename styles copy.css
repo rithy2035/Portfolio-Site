@@ -1193,6 +1193,8 @@ margin-left: 2%;
     /*padding-top: 2.5%;
     padding-left: 5.5%;*/
     font-family: 'ClarikaProGeo-DmIt';
+    font-weight: 600;
+    font-style: italic;
     position: relative;
     top: 45px;
     margin-top: -3%;
@@ -1281,6 +1283,10 @@ margin-left: 2%;
 /* -- mobile break  -- */ 
 
 @media (max-width: 600px) {
+
+  #helix h1 {
+    top: 0; 
+  }
     .project-bottom p {
         display: flex;
         justify-content: center;
