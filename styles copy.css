@@ -1298,10 +1298,12 @@ margin-left: 2%;
     }
 }
 
+
+
 /* ---   GD4: Helix   --- */
 
 #intro-GD3 {
-    border-style: solid;
+    border: 1px solid black;
     display: inline-block;
     padding: 6.5%; 
    /* --- great proportion */
@@ -1331,6 +1333,8 @@ p#work_copy {
     /*padding-top: 2.5%;
     padding-left: 5.5%;*/
     font-family: 'ClarikaProGeo-DmIt';
+    font-weight: 600;
+    font-style: italic;
     position: relative;
     top: 45px;
     margin-top: -3%;
