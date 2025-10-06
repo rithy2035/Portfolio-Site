@@ -1380,7 +1380,7 @@ p#work_copy {
     /*width: 100%;*/
     height: 80%;
     background-color: #ffe039;
-    border-style: solid;
+    border: 1px solid black;
     padding-top: 5%;
     padding-bottom: 10%;
 }
