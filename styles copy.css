@@ -1531,6 +1531,21 @@ p#work_copy {
   border: 0;
 }
 
+@media (max-width: 600px) {
+
+  #intro-UI1 h1 {
+    font-size: 5rem;
+  }
+    .project-bottom p {
+        display: flex;
+        justify-content: center;
+        margin-left: -42%;
+        width: 200%;
+        /*position: relative;
+        width: 200%;
+        left: 29px;*/
+    }
+}
 
 
 
