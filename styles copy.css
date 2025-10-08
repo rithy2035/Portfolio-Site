@@ -1527,8 +1527,8 @@ p#work_copy {
 .video-container iframe {
   position: absolute;
   inset: 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 1000%;
   margin: auto;
   border: 0;
 }
