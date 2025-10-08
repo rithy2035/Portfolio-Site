@@ -1737,19 +1737,28 @@ p#work_copy {
 
     #intro-UI4 h1 {
     font-size: 4rem;
-    
     }
-  
+
 }
 
 @media (max-width:519px) {
-
+  
+    
     #intro-UI4 h1 {
      font-size: 3.5rem;
      margin: 0;
      padding: 0;
      line-height: 1.1; /* tighten vertical rhythm */
     }
+
+    #intro-UI4 h2 {
+      margin-bottom: 20%;
+    }
+
+      #copy-UI4 {
+      top: 15px;
+    }
+  
 }
 
 #intro-UI4 h3 {
