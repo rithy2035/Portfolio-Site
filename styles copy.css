@@ -1551,6 +1551,22 @@ p#work_copy {
 
 
 
+/* ---   UI2: UI/UX Works   --- */
+
+@media (max-width: 600px) {
+
+  .special1 img {
+    clip-path: inset(3px 3px 36px 2px);
+  }
+
+  .special2 img {
+    clip-path: inset(3px 3px 3px 2px);
+  }
+
+  /* clip-path: inset(3px 3px 3px 3px); */
+}
+
+
 
 
 /* ---   UI3: UI/UX Dodecagon   --- */
