@@ -1512,7 +1512,7 @@ p#work_copy {
 
 #Surface img {
     position: relative;
-    clip-path: inset(0 0 90px 0);
+    /*clip-path: inset(0 0 90px 0);*/
     max-width: 100%;
     margin-bottom: 8%;
 }
