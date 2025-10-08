@@ -1563,7 +1563,11 @@ p#work_copy {
     clip-path: inset(3px 3px 3px 2px);
   }
 
-  .title-D h1 {
+  .title-D #Helix h1 {
+    top: 20px;
+  }
+
+   .title-D #Flux h1 {
     top: 20px;
   }
     
