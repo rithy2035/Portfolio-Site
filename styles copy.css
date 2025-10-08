@@ -1569,11 +1569,11 @@ p#work_copy {
   }
 
   .title-D #Helix h1 {
-    top: 20px;
+    top: 20px !important;
   }
 
    .title-D #Flux h1 {
-    top: 0px;
+    top: 0px !important;
   }
     
 
