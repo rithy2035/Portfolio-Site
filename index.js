@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-alert("Hello");
+// alert("Hello");
 
 // -----------------------------
 // WDHomepage Text Hover Effect
