@@ -34,7 +34,7 @@ html, body {
     font-family: 'ClarikaProGeo-Dm';
     src: url('fonts/ClarikaProGeo-Dm.woff2') format('woff2'),
         url('fonts/ClarikaProGeo-Dm.woff') format('woff'),
-        url('fonts/ClarikaProGeo-Md.otf') format('opentype');
+        url('fonts/ClarikaProGeo-Md.otf') format('opentype');F
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -1741,7 +1741,7 @@ p#work_copy {
 
 }
 
-@media (max-width:519px) {
+@media (max-width:600px) {
   
     
     #intro-UI4 h1 {
@@ -1756,7 +1756,7 @@ p#work_copy {
     }
 
       #copy-UI4 p {
-      top: 15px;
+      top: 15px !important;
     }
   
 }
