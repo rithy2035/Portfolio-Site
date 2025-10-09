@@ -2880,7 +2880,7 @@ p#work_copy_wd3 {
 
 
 
-@media(min-width: 601px) {
+@media(max-width: 601px) {
     #title-am h1 {
      font-size: 3.8rem;
      white-space: nowrap;
