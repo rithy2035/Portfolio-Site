@@ -2856,7 +2856,8 @@ p#work_copy_wd3 {
     width: 50%;*/
     position: relative;
     width: 50%; /* or whatever width you like */
-    margin: 0 auto; /* THIS centers it horizontally */
+    /* margin: 0 auto;  THIS centers it horizontally */
+    margin: 0 auto 4rem; /* <-- 4rem is a nice roomy gap */
     padding: 88px; /* keep your padding */
     border: 1px solid #ffe039;
 
