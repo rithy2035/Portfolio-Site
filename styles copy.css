@@ -2903,6 +2903,15 @@ p#work_copy_wd3 {
     #skills h2 {
       left: 12%;
     }
+
+  #skills-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+  
 }
 
   
