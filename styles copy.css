@@ -2813,7 +2813,11 @@ p#work_copy_wd3 {
 
 #skills-block {
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;            /* nice space between lists */
+    flex-wrap: wrap;      /* allows stacking on mobile */
     margin-bottom: 75px;
     
 }
