@@ -2904,16 +2904,18 @@ p#work_copy_wd3 {
       left: 5%;
     }
 
+     #skills-block {
+      display: block;
+      /*flex-direction: column;
+      gap: 0.5rem;*/
+       position: relative;
+    }
+  
     #skills-block ul:nth-of-type(2) {
-  margin-top: -0.5rem; /* adjust this value until they line up visually */
-}
+    margin-top: -1.2rem; /* adjust this value until they line up visually */
+    }
 
-
- /* #skills-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}*/
+  
 
   #courses-block {
     margin: 0 5% 150px 5%;
