@@ -2901,7 +2901,7 @@ p#work_copy_wd3 {
     }
 
     #skills h2 {
-      left: 12%;
+      left: 5%;
     }
 
   #skills-block {
@@ -2910,7 +2910,9 @@ p#work_copy_wd3 {
   gap: 0.5rem;
 }
 
-
+  #courses-block {
+    margin: 0 5% 150px 5%;
+  }
   
 }
 
