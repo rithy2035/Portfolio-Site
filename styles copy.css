@@ -1782,7 +1782,7 @@ p#work_copy {
 
 }
 
-@media (max-width:600px) {
+@media (max-width:601px) {
   
     
     #intro-UI4 h1 {
@@ -1798,6 +1798,10 @@ p#work_copy {
 
       #copy-UI4 p {
       top: 15px !important;
+    }
+
+    .Byr {
+      bottom-margin: 20px;
     }
   
 }
