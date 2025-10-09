@@ -2746,6 +2746,10 @@ p#work_copy_wd3 {
      #intro-ca h1 {
         font-size: 5rem;
     }
+
+    #intro-ca {
+      display: block;
+    }
 }
 
 
