@@ -2881,6 +2881,11 @@ p#work_copy_wd3 {
 
 
 @media(max-width: 601px) {
+
+    #title-am {
+      width: 80%;
+    }
+  
     #title-am h1 {
      font-size: 3.8rem;
      white-space: nowrap;
