@@ -2849,11 +2849,16 @@ p#work_copy_wd3 {
     /*display: flex;
     justify-content: center;
     flex-direction: column;*/
-    position: relative;
+    /*position: relative;
     margin: 5% 18% 18% 18%;
     border: 1px solid #ffe039;
     padding: 88px;
-    width: 50%;
+    width: 50%;*/
+    position: relative;
+    width: 50%; /* or whatever width you like */
+    margin: 0 auto; /* THIS centers it horizontally */
+    padding: 88px; /* keep your padding */
+    border: 1px solid #ffe039;
 
 }
 
