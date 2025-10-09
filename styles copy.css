@@ -1765,7 +1765,7 @@ p#work_copy {
 #copy-UI4 {
     font-family: 'ClarikaProGeo-Md';
     position: relative;
-    top: -33px;
+    /*top: -33px;*/
     width: 80%;
     text-align: justify;
 }
