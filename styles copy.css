@@ -2733,6 +2733,14 @@ p#work_copy_wd3 {
 
 
 
+@media (max-width: 600px) {
+     #intro-ca h1 {
+        font-size: 5rem;
+    }
+}
+
+
+
 /* ---   AM: About Me  --- */
 
 #wrapper-am {
