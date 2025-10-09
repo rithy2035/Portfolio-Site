@@ -2920,7 +2920,15 @@ p#work_copy_wd3 {
   #courses-block {
     margin: 0 5% 150px 5%;
   }
-  
+
+
+  #contact-p {
+    margin: 0% 0% 50% 0%;
+  }
+
+  #contact-p h2 {
+    left: 0;
+  }  
 }
 
   
