@@ -2758,7 +2758,7 @@ p#work_copy_wd3 {
 /* ---   AM: About Me  --- */
 
 #wrapper-am {
-   border-style: solid;
+   border: 1px solid black
    color: black;
 }
 
