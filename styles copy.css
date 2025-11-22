@@ -2874,7 +2874,13 @@ p#work_copy_wd3 {
     font-size: 2rem;
 }
 
-#contact-p p a {
+#contact-p p {
+    position: relative;
+    left: 5%;
+    font-family: 'ClarikaProGeo-Rg';
+}
+
+#contact-p a {
     position: relative;
     left: 5%;
     font-family: 'ClarikaProGeo-Rg';
