@@ -34,7 +34,7 @@ html, body {
     font-family: 'ClarikaProGeo-Dm';
     src: url('fonts/ClarikaProGeo-Dm.woff2') format('woff2'),
         url('fonts/ClarikaProGeo-Dm.woff') format('woff'),
-        url('fonts/ClarikaProGeo-Md.otf') format('opentype');F
+        url('fonts/ClarikaProGeo-Md.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -246,6 +246,7 @@ a:hover {
   background: #fff;   /* solid fill so background doesn’t show through */
   color: #000;        /* text stays readable */
   z-index: 11;
+  transform: translateY(10px);
 }
 
 .dropdown li a {
@@ -492,7 +493,7 @@ a:hover {
 #wel-bottom {
     background-color: #ffe039;
     height: 480px;
-    padding-top: 1%:
+    padding-top: 1%;
     padding-right: 10%;
 }
 
@@ -1533,6 +1534,11 @@ p#work_copy {
   border: 0;
 }
 
+#Surface .video-container {
+    width: 85%;
+    max-width: 900px;
+}
+
 @media (max-width: 600px) {
 
   #intro-UI1 h1 {
@@ -1670,6 +1676,8 @@ p#work_copy {
     background-color: #ffe039;
     padding-top: 5%;
     padding-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Dodecagon-works  img {
@@ -1684,6 +1692,64 @@ p#work_copy {
 }
 
 
+/* ---   WD5: Web CPL  --- */
+
+.lonestar-link {
+    /* display: block;
+    margin-top: 32px;
+    text-align: center; */
+    display: block;
+     margin-top: -26%;
+    margin-bottom: 21%;
+    font-family: 'ClarikaProGeo-Bd';
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* ---   UI5: UI/UX Segundo  --- */
+
+#Segundo-works {
+    width: 100%;
+    background-color: #ffe039;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#Segundo-works img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#Segundo-works .video-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+
+
+.segundo-prototype-link {
+  display: block;
+  width: fit-content;
+  margin: 24px auto 48px;
+   font-family: 'Bozon-Bold';
+    font-weight: bold;
+    font-style: normal;
+  /* font-size: 16px;
+  font-weight: 600;
+  color: #111;*/
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.segundo-prototype-link:hover {
+  opacity: 0.6;
+}
 
 
 
@@ -1736,7 +1802,7 @@ p#work_copy {
 }
 
 .Byr {
-      bottom-margin: 20px;
+      margin-bottom: 20px;
     }
 
 
@@ -1808,7 +1874,7 @@ p#work_copy {
     }
 
     .Byr {
-      bottom-margin: 20px;
+      margin-bottom: 20px;
     }
   
 }
@@ -2948,3 +3014,5 @@ p#work_copy_wd3 {
 }
 
   
+/* ---   WD5: Segundo  --- */
+
